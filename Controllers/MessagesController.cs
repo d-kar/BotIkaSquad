@@ -35,7 +35,7 @@ namespace Microsoft.Bot.Sample.ProactiveBot
 
                 var client = new ConnectorClient(new Uri(messageactivity.ServiceUrl));
                 var triggerReply = messageactivity.CreateReply();
-                triggerReply.Text = $"This is coming back from the trigger! {message.Text}";
+                triggerReply.Text = $"’ехе вот и €! {message.Text}";
                 await client.Conversations.ReplyToActivityAsync(triggerReply);
             }
             else
